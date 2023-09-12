@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.secOne {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(css/image/contact-banner-min.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#filter {
+    background-color: #2525259E;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 40px;
+}
+header img {
+    cursor: pointer;
+}
+header #hiddenImage {
+    display: none;
+}
+
+header #ul {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0px 0px 25px -5px;
+    font-family: var(--e-global-typography-text-font-family);
+    font-weight: var(--e-global-typography-text-font-weight);
+    font-size: 16px;
+}
+
+
+header #hiddenimage__Div {
+    display: none;
+}
+header #barsIcone {
+    display: none;
+}
+
+@media(min-width: 300px) and (max-width: 991px) {
+    header {
+        background-color: #fff;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header #logImage {
+        display: flex;
+    }
+    header #logImage {
+        display: none;
+    }
+    header #hiddenImage {
+        display: flex;
+    }
+    header #ul ul {
+        display: none;
+    }
+    header #barsIcone {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    header #hiddenimage__Div {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    #herodiv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 4rem;
+    }
+}
+
+header ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding-left: 2.3rem;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    color: #ddd;
+    transition-property: color;
+}
+#textSec1 {
+    width: 100%;
+    color: #fff;
+    padding-top: 3.5rem;;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end ;
+    align-content: center   ;
+    align-items: center;
+}
+#textSec1 p {
+    color: #ddd;
+    font-weight: 500;
+}
+#textSec1 h1 {
+    font-weight: bold;
+    font-size: 52px;
+}
+/* End Section One And Header */
+/* Section Two */
+.secTwo {
+    width: 100%;
+    min-height: 100Vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.secTwo #one,#two,#three,#foure {
+    width: calc(80% / 4);
+    background-color: #ddd;
+    padding: 60px 0;
+    border-bottom: 3px solid #000;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.secTwo  span {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secTwo  span i {
+    color: #fff;
+    font-size: 30px;
+}
+.secTwo  .colr_wh {
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #252525;
+}
+.secTwo  .colr {
+    color: #656565;
+    line-height: 10px;
+}
+.secTwo span:hover>i {
+    color: #656565;
+    border: none;
+}
+@media(min-width: 768px) and (max-width: 1023px) {
+    .secTwo {
+        min-height: 140vh;
+        gap: 8%;
+        padding-top: 120px;
+    }
+    .secTwo #one,#two,#three,#foure {
+        width: calc(80% / 2);
+        gap: 15%;
+    }
+}
+@media(min-width: 300px) and (max-width: 767px) {
+    .secTwo {
+        min-height: 250vh;
+        gap: 8%;
+        padding-top: 120px;
+    }
+    .secTwo #one,#two,#three,#foure {
+        width: calc(80% / 1);
+        gap: 15%;
+    }
+}
+/* End Section Two */
+
+/* Start Section Three */
+#secThree {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #ddd;
+    text-align: center;
+}
+#secThree #help {
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    margin-bottom: 25px;
+    line-height: 40px;
+    cursor:text;
+}
+#secThree #help p {
+    color: #656565;
+    font-weight: 400;
+    font-size: 19px;
+}
+#secThree #form {
+    width: 100%;
+}
+
+#secThree #form #textInput input {
+    padding: 10px;
+    width: calc(60% /3);
+    border: 1px solid #dedede;
+    outline: none;   
+
+}
+#secThree #textInput {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 1%;
+    padding-bottom: 1rem;
+}
+#secThree #form #message {
+    width: 100%;
+}
+#secThree #form #message textarea {
+    width: 62%;
+    padding: 15px;
+    height: 140px;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid #dedede;
+    overflow: hidden;
+}
+#secThree #form button {
+    background-color: #252525;
+    border: none;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+#secThree #form button:hover {
+    background-color: #656565;
+}
+@media(min-width: 300px) and (max-width: 992px){
+    #secThree #form #textInput input {
+        width: calc(75% /1);
+        margin-bottom: 20px;
+    }
+    #secThree #form #message textarea {
+        width: 75%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  End Section Three */
+/* Start Footer */
+footer {
+    background-color: #252525 ;
+    width: 100%;
+    min-height: 70vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+footer #up_footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+@media(min-width: 300px) and (max-width: 1023px) {
+    footer #up_footer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    footer #footText {
+        padding-left: 3rem;
+        padding-top: 100px;
+    }
+}
+footer #up_footer #QuickLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+footer #up_footer #QuickLinks p {
+    padding-left: 44px;
+    font-size: 18px;
+    font-weight: 500;
+}
+footer #up_footer #QuickLinks ul {
+    list-style: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+footer #up_footer #QuickLinks ul li {
+    padding-bottom: 0.5rem;
+    color: #a0a0a0;
+}
+footer #up_footer #QuickLinks ul li:hover {
+    color: #fff;
+}
+footer #up_footer #Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+footer #up_footer #Contact ul {
+    list-style: none;
+}
+footer #up_footer #Contact ul li{
+    color: #a0a0a0;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+footer #up_footer #Contact ul #email:hover{
+    color: #fff;
+}
+footer #up_footer #Contact p {
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 500;
+}
+footer #up_footer #Contact ul #last__Span {
+    width: 80%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+footer #up_footer #Contact ul #last__Span i:hover {
+    color: #fff;
+}
+footer #last__Div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 80px 40px 0 40px;
+}
+footer #last__Div::before {
+    content: '';
+    width: 80%;
+    height: 10px;
+    color: #fff;
+    position:absolute;
+    top: 0;
+}

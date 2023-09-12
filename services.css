@@ -1,0 +1,971 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(css/image/Services-min-600x500.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#filter {
+    background-color: #2525259E;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 40px;
+}
+header img {
+    cursor: pointer;
+}
+header #hiddenImage {
+    display: none;
+}
+
+header #ul {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0px 0px 25px -5px;
+    font-family: var(--e-global-typography-text-font-family);
+    font-weight: var(--e-global-typography-text-font-weight);
+    font-size: 16px;
+}
+
+
+header #hiddenimage__Div {
+    display: none;
+}
+header #barsIcone {
+    display: none;
+}
+
+@media(min-width: 300px) and (max-width: 991px) {
+    header {
+        background-color: #fff;
+        height: 10vh;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header #logImage {
+        display: flex;
+    }
+    header #logImage {
+        display: none;
+    }
+    header #hiddenImage {
+        display: flex;
+    }
+    header #ul ul {
+        display: none;
+    }
+    header #barsIcone {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    header #hiddenimage__Div {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    #herodiv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 4rem;
+    }
+}
+
+header ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding-left: 2.3rem;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    color: #ddd;
+    transition-property: color;
+}
+#textSec1 {
+    width: 100%;
+    color: #fff;
+    padding-top: 3.5rem;;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end ;
+    align-content: center   ;
+    align-items: center;
+}
+#textSec1 p {
+    color: #ddd;
+    font-weight: 500;
+}
+#textSec1 h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#secTwo {
+    padding-top: 100px;
+}
+#secTwo #text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#secTwo #text>h2 {
+    font-size: 40px;
+    color:  #252525;
+}
+#secTwo #text>p {
+    font-size: 17px;
+    color:  #656565;
+    line-height: 2.3;
+}
+
+/* End Section Two */
+
+/* Start Section Three */
+#sectionThree {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#sectionThree #one {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: calc(80% / 3);
+    height:440px;
+    background-color: #f0f0f1;
+    cursor: pointer;    
+}
+#sectionThree #one #first {
+    height: 192px;
+    width: 100%;
+    background-image: url(css/image/service1-1-min.jpg);
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 5rem;
+}
+#sectionThree #one #first:hover {
+    background-position: center;
+    background-size: 120%;
+    transition: 1.3s;
+}
+#sectionThree #one .one {
+    padding: 1rem 0;
+}
+#sectionThree #one .one>h3{
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 25px;
+}
+#sectionThree #one .two {
+    padding: 0px 20px;
+}
+#sectionThree #one .two>p{
+    font: 14px;
+    color: #656565;
+    text-align: center;
+}
+#sectionThree #two {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: calc(80% / 3);
+    height:440px;
+    background-color: #f0f0f1;
+    cursor: pointer;    
+}
+#sectionThree #two #second {
+    height: 192px;
+    width: 100%;
+    background-image: url(css/image/service2-2-min.jpg);
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 5rem;
+}
+#sectionThree #two #second:hover {
+    background-position: center;
+    background-size: 120%;
+    transition: 1.3s;
+}
+#sectionThree #two .one {
+    padding: 1rem 0;
+}
+#sectionThree #two .one>h3{
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 25px;
+}
+#sectionThree #two .two {
+    padding: 0px 20px;
+}
+#sectionThree #two .two>p{
+    font: 14px;
+    color: #656565;
+    text-align: center;
+}
+#sectionThree #three {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: calc(80% / 3);
+    height:440px;
+    background-color: #f0f0f1;
+    cursor: pointer;    
+}
+#sectionThree #three #third {
+    height: 192px;
+    width: 100%;
+    background-image: url(css/image/service3-3-min.jpg);
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 5rem;
+}
+#sectionThree #three #third:hover {
+    background-position: center;
+    background-size: 120%;
+    transition: 1.3s;
+}
+#sectionThree #three .one {
+    padding: 1rem 0;
+}
+#sectionThree #three .one>h3{
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 25px;
+}
+#sectionThree #three .two {
+    padding: 0px 20px;
+}
+#sectionThree #three .two>p{
+    font: 14px;
+    color: #656565;
+    text-align: center;
+}
+@media(min-width: 300px) and (max-width: 980px) {
+    #sectionThree #one {
+        width: calc(85% / 1);
+    }
+    #sectionThree #two {
+        width: calc(85% / 1);
+    }
+    #sectionThree #three {
+        width: calc(85% / 1);
+    }
+}
+
+
+
+
+/* Start Services Div */
+#services {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ddd;
+    gap: 35px;
+}
+#services #adressDiv {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#services #Application{
+    /* width: calc((100% - 240px) / 3); */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Application i {
+    font-size: 35px;
+}
+#services #Application #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Application span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Application span i {
+    font-size: 20px;
+}
+#services #Application span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Application span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+
+#services #Digtal {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Digtal i {
+    font-size: 35px;
+}
+#services #Digtal #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Digtal span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Digtal span i {
+    font-size: 20px;
+}
+#services #Digtal span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Digtal span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+#services #Mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Mobile i {
+    font-size: 35px;
+}
+#services #Mobile #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Mobile span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Mobile span i {
+    font-size: 20px;
+}
+#services #Mobile span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Mobile span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+/* End Mobile */
+#services #WebSite {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #WebSite i {
+    font-size: 35px;
+}
+#services #WebSite #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #WebSite span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #WebSite span i {
+    font-size: 20px;
+}
+#services #WebSite span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #WebSite span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+/* End Web */
+#services #Content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Content i {
+    font-size: 35px;
+}
+#services #Content #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Content span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Content span i {
+    font-size: 20px;
+}
+#services #Content span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Content span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+/* End Content */
+#services #project {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #project i {
+    font-size: 35px;
+}
+#services #project #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #project span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #project span i {
+    font-size: 20px;
+}
+#services #project span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #project span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+@media(min-width: 300px) and (max-width: 995px){
+    #services {
+        height: 500vh;
+    }
+    #services #Application  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #Digtal  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #Mobile  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #WebSite  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #Content  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #project  {
+        width: calc((100% - 100px) / 1);
+    }
+}
+/* End Serivces Div */
+
+#planning {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+}
+#planning #planOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(90% / 4);
+}
+#planning #planTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(90% / 4);
+}
+#planning #planThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(90% / 4);
+}
+#planning #planFoure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(90% / 4);
+}
+#planning  span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    border: 2px solid #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#planning   h5{
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: #252525;
+}
+#planning   p {
+    font-size: 14px;
+    color: #656565;
+}
+@media(min-width: 300px) and (max-width: 992px){
+    #planning {
+        row-gap: 40px;
+        margin-bottom: 5rem;
+    }
+    #planning #planOne {
+        width: calc(90% / 1);
+    }
+    #planning #planTwo {
+        width: calc(90% / 1);
+    }
+    #planning #planThree {
+        width: calc(90% / 1);
+    }
+    #planning #planFoure {
+        width: calc(90% / 1);
+    }
+}
+
+/* End Planing Div  */
+/* Start Offer Div */
+#bigDiv__Offer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+#offerText {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#bigOffer {
+    width: calc(90% / 3);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 70px 20px;
+}
+#bigOffer2 {
+    width: calc(90% / 3);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 70px 20px;
+    position: relative;
+}
+#bigOffer2::before {
+    content: "POPULAR";
+    background-color: #333333;
+    padding: 0 10px;
+    font-size: 14px;;
+    color: #fff;
+    position: absolute;
+    top: -6px;
+}
+#bigOffer3 {
+    width: calc(90% / 3);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 70px 20px;
+}
+#basicPlan h2 {
+    font-size: 38px;
+    color: #252525;
+    font-weight: bold;
+}
+#basicPlan .basicp {
+    color: #252525;
+    font-weight: 500;
+}
+#basicPlan .last__p {
+    color: #252525;
+    font-size: 14px;
+    padding-bottom: 1rem;
+}
+
+
+#list ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.3rem;
+}
+#list ul li{
+    border-bottom: 1px solid #656565;
+    padding: 17px 0 15px;
+    font-size: 14px;
+    color: #252525;
+}
+
+#button1 button {
+    background-color: #252525;
+    border: none;
+    padding: 15px 20px;
+    color: #fff;
+}
+#button1 button:hover {
+    background-color: #656565;
+}
+@media(min-width: 300px) and (max-width: 880px) {
+    #bigDiv__Offer {
+        row-gap: 40px;
+        background-color: #ddd;
+    }
+    #bigOffer {
+        width: calc(90% / 1);
+    }
+    #bigOffer2 {
+        width: calc(90% / 1);
+    }
+    #bigOffer3 {
+        width: calc(90% / 1);
+    }
+}
+#brand {
+    width: 100%;
+    min-height: 60vh;
+    background-color: #252525;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+#brand #textBrand {
+    color: #fff;
+    width: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start ;
+}
+#brand #textBrand h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+#brand #brandCompany {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#brand #brandCompany div {
+    background-color: #f0f0f1;
+    width: calc(90% / 4);
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+@media(min-width: 300px) and (max-width: 880px) {
+    #brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    #brand #textBrand  {
+        width: 100%;
+        padding-left: 10px;
+    }
+    #brand #brandCompany div {
+        width: calc(90% / 2);
+    }
+}
+
+/* Start lastDiv__About */
+
+#lastDiv__About {
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(css/image/cta-min.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#lastDiv__About #filter__About {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #25252585;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+#lastDiv__About #filter__About h1 {
+    font-size: 45px;
+padding-bottom: 2rem;  
+} 
+#lastDiv__About #filter__About p {
+    font-size: 14px;
+    color: #ffffffba;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+#lastDiv__About #filter__About button {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #252525;
+    padding: 18px 36px;
+    border-style: none;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: .3s;
+}
+#lastDiv__About #filter__About button:hover {
+    background-color: #656565;
+}
+
+
+footer {
+    background-color: #252525 ;
+    width: 100%;
+    min-height: 70vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+footer #up_footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+@media(min-width: 300px) and (max-width: 1023px) {
+    footer #up_footer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    footer #footText {
+        padding-left: 3rem;
+        padding-top: 100px;
+    }
+}
+footer #up_footer #QuickLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+footer #up_footer #QuickLinks p {
+    padding-left: 44px;
+    font-size: 18px;
+    font-weight: 500;
+}
+footer #up_footer #QuickLinks ul {
+    list-style: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+footer #up_footer #QuickLinks ul li {
+    padding-bottom: 0.5rem;
+    color: #a0a0a0;
+}
+footer #up_footer #QuickLinks ul li:hover {
+    color: #fff;
+}
+footer #up_footer #Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+footer #up_footer #Contact ul {
+    list-style: none;
+}
+footer #up_footer #Contact ul li{
+    color: #a0a0a0;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+footer #up_footer #Contact ul #email:hover{
+    color: #fff;
+}
+footer #up_footer #Contact p {
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 500;
+}
+footer #up_footer #Contact ul #last__Span {
+    width: 80%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+footer #up_footer #Contact ul #last__Span i:hover {
+    color: #fff;
+}
+footer #last__Div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 80px 40px 0 40px;
+}
+footer #last__Div::before {
+    content: '';
+    width: 80%;
+    height: 10px;
+    color: #fff;
+    position:absolute;
+    top: 0;
+}

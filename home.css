@@ -1,0 +1,1028 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --e-global-color-primary: #252525;
+    --e-global-color-secondary: #505050;
+    --e-global-color-text: #656565;
+    --e-global-color-accent: #252525;
+    --e-global-color-5a66f6e: #FFFFFF;
+    --e-global-typography-primary-font-family: "Mukta";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Inter";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Inter";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Inter";
+    --e-global-typography-accent-font-weight: 500;
+    font-size: 17px;
+    line-height: 32px;
+    --padding-top: 3px;
+    /* container */
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(css/image/hero-min.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#filter {
+    background-color: rgba(0, 0, 0, 0.484);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 40px;
+}
+header img {
+    cursor: pointer;
+}
+header #hiddenImage {
+    display: none;
+}
+
+header #ul {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0px 0px 25px -5px;
+    font-family: var(--e-global-typography-text-font-family);
+    font-weight: var(--e-global-typography-text-font-weight);
+    font-size: 16px;
+}
+
+
+header #hiddenimage__Div {
+    display: none;
+}
+header #barsIcone {
+    display: none;
+}
+
+@media(min-width: 300px) and (max-width: 991px) {
+    header {
+        background-color: #fff;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header #logImage {
+        display: flex;
+    }
+    header #logImage {
+        display: none;
+    }
+    header #hiddenImage {
+        display: flex;
+    }
+    header #ul ul {
+        display: none;
+    }
+    header #barsIcone {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    header #hiddenimage__Div {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    #herodiv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 4rem;
+    }
+}
+
+
+
+header ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding-left: 2.3rem;
+    padding-top: 10px;
+    transition: 1.1s;
+}
+
+header ul li a:hover {
+    color: #656161;
+    transition-property: color;
+}
+
+#herodiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#digital {
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-start ;
+    align-items: flex-start;
+}
+@media(min-width: 771) and (max-width: 992px) {
+    #digital  {
+        white-space: nowrap;
+    }
+}
+
+
+#digital h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+}
+@media(min-width: 992px) and (max-width: 1200px) {
+    #digital h1 {
+        white-space: nowrap;
+    }
+}
+#digital p {
+    color: #656565;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: var(--e-global-typography-secondary-font-family);
+}
+#digital button {
+    color: #656565;
+    background-color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 16px 36px;
+    border-radius: 2px;
+    border: none;
+}
+#borderText {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(min-width: 386px) and (max-width: 771px) {
+    #digital h1 {
+        font-size: 40px;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+    #digital p {
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 880px) {
+    #borderText img {
+        display: none;
+        visibility: hidden;
+    }
+    #digital h1 {
+        font-size: 40px;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+}
+/* End Header And Section One */
+
+/* Start Section Two */
+#secTwo {
+    background-color: #fff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 105px 15px 70px 15px;
+}
+
+#secTwo i {
+    font-size: 45px;
+    padding-bottom: 1.5rem;
+}
+#secTwo h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 2rem;
+}
+#secTwo p {
+    font-size: 17px;
+    line-height: 2rem;
+    word-spacing: 1px;
+    color: #656565;
+}
+#secTwo div {
+    width: calc((100% - 30px) / 4);
+    padding: 0 30px 0 20px;
+}
+@media(min-width: 762px) and (max-width: 881px) {
+    #secTwo div {
+        width: calc((100% - 30px) / 2);
+    }
+}
+@media(min-width: 300px) and (max-width: 761px) {
+    #secTwo div {
+        width: calc((100% - 30px) / 1);
+    }
+}
+/* End Section Two */
+
+/* Start Section Three */
+
+#mainDiv {
+    min-height: 120vh ;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 25px 100px 25px;
+}
+#mainDiv #first {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 30px 25px;
+}
+#mainDiv #first h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+#mainDiv #first i {
+    font-size: 50px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+#mainDiv #second {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 50px;
+}
+#mainDiv #second #one,
+#two,
+#three {
+    width: calc(90% / 3);
+    height: 100%;
+    cursor: pointer;
+}
+
+#mainDiv #second #one {
+    background-image: url(css/image/cups-min-600x500.jpg);
+    background-position: center;
+    background-size: 155%;
+    transition: 1.5s;
+}
+#mainDiv #second #two {
+    background-image: url(css/image/ear-pods-min-600x500.jpg);
+    background-position: center;
+    background-size: 155%;
+}
+#mainDiv #second #two:hover{
+    background-size: 200%;
+    transition: 2s;
+}
+
+#mainDiv #second #three {
+    background-image: url(css/image/vase-min-600x500.jpg);
+    background-position: center;
+    background-size: 155%;
+}
+#mainDiv #second #three:hover {
+    background-size: 200%;
+    transition: 2s;
+}   
+#mainDiv #second #one:hover{
+    background-size: 200%;
+    transition: 2s;
+}
+
+#FilterOne,
+#filterTwo,
+#filterThree  {
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.327);
+    display: none;
+}
+
+#FilterOne,
+#filterTwo,
+#filterThree i {
+    font-size: 30px;
+}
+#one:hover>#FilterOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#two:hover>#filterTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#three:hover>#filterThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#mainDiv #third button {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 15px 30px;
+}
+#mainDiv #third button:hover {
+    background-color: #505050;
+}
+
+@media(min-width: 300px) and (max-width: 767px) {
+    #mainDiv #first {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+}
+@media(min-width: 300px) and (max-width: 679px) {
+    #mainDiv #second {
+        min-height: 250vh;
+    }
+    #mainDiv #second #one,
+    #two,
+    #three {
+        width: calc(90% / 1);
+        height: 70vh;
+        row-gap: 20px;
+    }
+}
+@media(min-width: 680px) and (max-width: 991px) {
+    #mainDiv #second {
+        min-height: 150vh;
+    }
+    #mainDiv #second #one,
+    #two,
+    #three {
+        width: calc(90% / 2);
+        height: 70vh;
+        row-gap: 20px;
+    }
+}
+@media(min-width: 992px) and (max-width: 1400px) {
+    #mainDiv #second {
+        min-height: 80vh;
+    }
+    #mainDiv #second #one,
+    #two,
+    #three {
+        width: calc(90% / 3);
+        height: 70vh;
+        row-gap: 20px;
+    }
+}
+
+/* End Main Div */
+
+/* Start services Div */
+#services {
+    width: 100%;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ddd;
+    gap: 35px;
+}
+#services #adressDiv {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#services #Application{
+    /* width: calc((100% - 240px) / 3); */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Application i {
+    font-size: 35px;
+}
+#services #Application #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Application span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Application span i {
+    font-size: 20px;
+}
+#services #Application span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Application span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+
+#services #Digtal {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Digtal i {
+    font-size: 35px;
+}
+#services #Digtal #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Digtal span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Digtal span i {
+    font-size: 20px;
+}
+#services #Digtal span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Digtal span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+#services #Mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Mobile i {
+    font-size: 35px;
+}
+#services #Mobile #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Mobile span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Mobile span i {
+    font-size: 20px;
+}
+#services #Mobile span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Mobile span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+/* End Mobile */
+#services #WebSite {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #WebSite i {
+    font-size: 35px;
+}
+#services #WebSite #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #WebSite span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #WebSite span i {
+    font-size: 20px;
+}
+#services #WebSite span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #WebSite span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+/* End Web */
+#services #Content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #Content i {
+    font-size: 35px;
+}
+#services #Content #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #Content span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #Content span i {
+    font-size: 20px;
+}
+#services #Content span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #Content span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+/* End Content */
+#services #project {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60vh;
+    width: calc((90% - 100px) / 3);
+    padding: 50px 35px;
+}
+#services #project i {
+    font-size: 35px;
+}
+#services #project #pragrapf_Div {
+    font-size: 16px;
+    color: #656565;
+}
+#services #project span {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#services #project span i {
+    font-size: 20px;
+}
+#services #project span p {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#services #project span:hover>i {
+    color: red;
+    transform: translateX(10px) rotate(360deg);
+    transition: 1.5s;
+}
+@media(min-width: 300px) and (max-width: 995px){
+    #services {
+        height: 500vh;
+    }
+    #services #Application  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #Digtal  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #Mobile  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #WebSite  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #Content  {
+        width: calc((100% - 100px) / 1);
+    }
+    #services #project  {
+        width: calc((100% - 100px) / 1);
+    }
+}
+/*                                 End Services Div            */
+
+/*                                Start About Us Div           */
+#aboutUs_Main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+}
+#textAbout {
+    height: 20vh;
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textAbout h4{
+    font-size: 40px;
+    font-weight: 600;
+}
+#aboutUs_Main #designer,
+#ceo,
+#Photographer {
+    width: calc(80% / 3);
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 5px #ddd;
+    padding: 70px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#aboutUs_Main #designer img{
+    padding-bottom: 1rem;
+}
+#aboutUs_Main #ceo img{
+    padding-bottom: 1rem;
+}
+#aboutUs_Main #Photographer img{
+    padding-bottom: 1rem;
+}
+#aboutUs_Main #designer p{
+    color: #656565;
+    font-size: 15px;
+}
+#aboutUs_Main #ceo p{
+    color: #656565;
+    font-size: 15px;
+}
+#aboutUs_Main #Photographer p{
+    color: #656565;
+    font-size: 15px;
+}
+#aboutUs_Main #designer span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+#aboutUs_Main #ceo span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+#aboutUs_Main #Photographer span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+@media(min-width: 300px) and (max-width: 767px) {
+    #aboutUs_Main #designer,
+    #ceo,#Photographer {
+        width: calc(100% / 1);
+        gap: 30px;
+    }
+}
+@media(min-width: 768px) and (max-width: 880px){
+    #aboutUs_Main {
+        min-height: 100vh;
+        row-gap: 20px;;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #aboutUs_Main #designer,
+    #ceo,#Photographer {
+        width: calc(60% /1);
+    }
+}
+/* End About Us */
+/* start Brand Company  Div*/
+#brand {
+    width: 100%;
+    min-height: 60vh;
+    background-color: #252525;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+#brand #textBrand {
+    color: #fff;
+    width: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start ;
+}
+#brand #textBrand h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+#brand #brandCompany {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#brand #brandCompany div {
+    background-color: #f0f0f1;
+    width: calc(90% / 4);
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+@media(min-width: 300px) and (max-width: 880px) {
+    #brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    #brand #textBrand  {
+        width: 100%;
+        padding-left: 10px;
+    }
+    #brand #brandCompany div {
+        width: calc(90% / 2);
+    }
+}
+/* End Brand Div */
+/* Start Fina Div  */
+#finalDiv {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+#finalDiv #textFinal_div {
+    width: 100%;
+    text-align: center;
+}
+#finalDiv #textFinal_div h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+#finalDiv #articals {
+    display: flex;
+    flex-flow: row ;
+    justify-content: center;
+    gap: 40px;
+}
+
+#finalDiv #articals div {
+    width: calc((80% - 20px) / 3);
+    background-color: #ddd;
+    padding: 20px 15px;
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1rem;
+}
+#finalDiv #articals .images {
+    width: 100%;
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+}
+#finalDiv #articals div p {
+    color:#656161;
+    font-size: 14px;
+}
+#finalDiv #articals div a {
+    color: #000;
+    font-size: 13px;
+}
+@media(min-width: 300px) and (max-width: 992px) {
+    #finalDiv #articals {
+        display: flex;
+        flex-direction: column;
+    }
+    #finalDiv #articals div {
+        width: calc(90% / 1);
+    }
+    #finalDiv #articals .images img {
+        width: 100%;
+    }
+}
+/* End Final Div  */
+/* Start Footer  */
+footer {
+    background-color: #252525 ;
+    width: 100%;
+    min-height: 70vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+footer #up_footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+@media(min-width: 300px) and (max-width: 1023px) {
+    footer #up_footer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    footer #footText {
+        padding-left: 3rem;
+        padding-top: 100px;
+    }
+}
+footer #up_footer #QuickLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+footer #up_footer #QuickLinks p {
+    padding-left: 44px;
+    font-size: 18px;
+    font-weight: 500;
+}
+footer #up_footer #QuickLinks ul {
+    list-style: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+footer #up_footer #QuickLinks ul li {
+    padding-bottom: 0.5rem;
+    color: #a0a0a0;
+}
+footer #up_footer #QuickLinks ul li:hover {
+    color: #fff;
+}
+footer #up_footer #Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+footer #up_footer #Contact ul {
+    list-style: none;
+}
+footer #up_footer #Contact ul li{
+    color: #a0a0a0;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+footer #up_footer #Contact ul #email:hover{
+    color: #fff;
+}
+footer #up_footer #Contact p {
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 500;
+}
+footer #up_footer #Contact ul #last__Span {
+    width: 80%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+footer #up_footer #Contact ul #last__Span i:hover {
+    color: #fff;
+}
+footer #last__Div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 80px 40px 0 40px;
+}
+footer #last__Div::before {
+    content: '';
+    width: 80%;
+    height: 10px;
+    color: #fff;
+    position:absolute;
+    top: 0;
+}
